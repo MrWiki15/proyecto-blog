@@ -8,6 +8,8 @@ image:
     alt: 'El logotipo completo de Astro.'
 tags: ["astro", "bloguear", "aprender en público"]
 ---
+
+
 # Mi primera publicación en el blog
 
 Publicado el: 2022-07-01
