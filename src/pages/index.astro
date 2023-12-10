@@ -1,38 +1,20 @@
 ---
-import '../styles/global.css';
-
-const pageTitle = "Blog MrWiki Astro";
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Inicio";
 ---
+<BaseLayout pageTitle={pageTitle}>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>{pageTitle}</h1>
+  	<h2>Mi impresionante subtítulo del blog</h2>
 
-		<a href="/">Inicio</a>
-        <a href="/about/">Sobre mi</a>
-        <a href="/blog/">Blog</a>
+	<h4>Este es mi primer blog con Astro</h4>
 
-		<h1>{pageTitle}</h1>
-
-		<h4>Este es mi primer blog con Astro</h4>
-
-		<p>
-			Es un blog de prueba que estare actualizando con el plazo del tiempo para darle mas funcionalidad y estetica
-		</p>
+	<p>
+		Es un blog de prueba que estare actualizando con el plazo del tiempo para darle mas funcionalidad y estetica
+	</p>
 		
-		<p>
-			Me interesa aprender a programar con astro porque es un framework que tiene buenas actualizaciones y brinda un buen soporte
-			no como angular, asi que sinceramente estoy pensando mudarme solamente a Astro, React y VUE y con el conocimiento que tengo
-			de Angular comerme un pequeno ajonjoli porque ya no se que escribir
-		</p>
-
-	</body>
-</html>
-
+	<p>
+		Me interesa aprender a programar con astro porque es un framework que tiene buenas actualizaciones y brinda un buen soporte
+		no como angular, asi que sinceramente estoy pensando mudarme solamente a Astro, React y VUE y con el conocimiento que tengo
+		de Angular comerme un pequeno ajonjoli porque ya no se que escribir
+	</p>
+</BaseLayout>

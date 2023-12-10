@@ -1,65 +1,48 @@
 ---
 import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTitle = "Blog";
 
 const blogOficialUrl = "https://chaindocs.org"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-
-		<a href="/">Inicio</a>
-        <a href="/about/">Sobre mi</a>
-        <a href="/blog/">Blog</a>
-
-		<h1>{pageTitle}</h1>
-
-        <p>
-			Esta es la pagina del blog, aun no he decidido que tipo de blogs subire aqui o si siquiera subire algun blog.|
-			Esto debido a que ya cuento con mi pagina web en <a target="_blank" href={blogOficialUrl}>ChainDocs</a> en la
-			cual subo contenido sobre blockchain. Asi que pasate por ahi.
-		</p>
+<BaseLayout pageTitle={pageTitle}>
+	<p>
+		Esta es la pagina del blog, aun no he decidido que tipo de blogs subire aqui o si siquiera subire algun blog.|
+		Esto debido a que ya cuento con mi pagina web en <a target="_blank" href={blogOficialUrl}>ChainDocs</a> en la
+		cual subo contenido sobre blockchain. Asi que pasate por ahi.
+	</p>
 
 
-		<h4>Pero como yua no se que decir aqui te dejo unos textos oficiales :)</h4>
+	<h4>Pero como yua no se que decir aqui te dejo unos textos oficiales :)</h4>
 
-        <p>
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-			Culpa illo alias ipsam cum saepe necessitatibus provident debitis 
-			facere exercitationem ab nobis beatae, perferendis rerum dolorum 
-			ncidunt dignissimos unde. Modi, quam.
-		</p>
-		
-		<p>
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-			Culpa illo alias ipsam cum saepe necessitatibus provident debitis 
-			facere exercitationem ab nobis beatae, perferendis rerum dolorum 
-			ncidunt dignissimos unde. Modi, quam.
-		</p>
+	<p>
+		Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+		Culpa illo alias ipsam cum saepe necessitatibus provident debitis 
+		facere exercitationem ab nobis beatae, perferendis rerum dolorum 
+		ncidunt dignissimos unde. Modi, quam.
+	</p>
 
-		<p>
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-			Culpa illo alias ipsam cum saepe necessitatibus provident debitis 
-			facere exercitationem ab nobis beatae, perferendis rerum dolorum 
-			ncidunt dignissimos unde. Modi, quam.
-		</p>
+	<p>
+		Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+		Culpa illo alias ipsam cum saepe necessitatibus provident debitis 
+		facere exercitationem ab nobis beatae, perferendis rerum dolorum 
+		ncidunt dignissimos unde. Modi, quam.
+	</p>
 
-        <h1>Mi blog de aprendizaje sobre Astro</h1>
-        <p>Aquí es donde publicaré acerca de mi viaje aprendiendo Astro.</p>
-        <ul>
-            <li><a href="/posts/post-1/">Publicación 1</a></li>
-			<li><a href="/posts/post-2/">Publicación 2</a></li>
-      		<li><a href="/posts/post-3/">Publicación 3</a></li>
-        </ul>
+	<p>
+		Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+		Culpa illo alias ipsam cum saepe necessitatibus provident debitis 
+		facere exercitationem ab nobis beatae, perferendis rerum dolorum 
+		ncidunt dignissimos unde. Modi, quam.
+	</p>
 
-	</body>
-</html>
+	<h1>Mi blog de aprendizaje sobre Astro</h1>
+	<p>Aquí es donde publicaré acerca de mi viaje aprendiendo Astro.</p>
+	<ul>
+		<li><a href="/posts/post-1/">Publicación 1</a></li>
+		<li><a href="/posts/post-2/">Publicación 2</a></li>
+		  <li><a href="/posts/post-3/">Publicación 3</a></li>
+	</ul>
+</BaseLayout>

@@ -1,0 +1,20 @@
+---
+const platform = "github";
+const username = "mrwiki15";
+import Social from './Social.astro';
+---
+
+<footer>
+    <p>¡Más información sobre mis proyectos en <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+    <Social platform="twitter" username="mrwiki15" />
+    <Social platform="github" username="mrwiki15" />
+    <Social platform="youtube" username="mrwiki" />
+</footer>
+
+<style>
+    footer {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+</style>
