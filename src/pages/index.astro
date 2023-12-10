@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting.jsx';
 const pageTitle = "Inicio";
 ---
 <BaseLayout pageTitle={pageTitle}>
@@ -17,4 +18,7 @@ const pageTitle = "Inicio";
 		no como angular, asi que sinceramente estoy pensando mudarme solamente a Astro, React y VUE y con el conocimiento que tengo
 		de Angular comerme un pequeno ajonjoli porque ya no se que escribir
 	</p>
+
+	<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+
 </BaseLayout>
